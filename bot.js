@@ -19,11 +19,11 @@ const getToken = (function(){
 })();
 const bot = new TelegramBot(getToken(), {polling: true});
 
-const projectId = 'timetask-telegram-bot';
-const sessionId = uuidv1();
+//const projectId = 'timetask-telegram-bot';
+//const sessionId = uuidv1();
 
-const sessionClient = new dialogflow.SessionsClient({keyFilename:'./timetask-telegram-bot-49ebe8b01110.json'})
-const sessionPath = sessionClient.sessionPath(projectId, sessionId);
+//const sessionClient = new dialogflow.SessionsClient({keyFilename:'./timetask-telegram-bot-49ebe8b01110.json'})
+//const sessionPath = sessionClient.sessionPath(projectId, sessionId);
 
 var fcm = new FCM(serverKey);
 
