@@ -45,6 +45,12 @@ const keyboard = Markup.inlineKeyboard([
   bot.sendMessage(msg.chat.id, text, Extra.markup(keyboard));*/
 });
 
+bot.onText(/안녕/, function(msg, match) {
+	var chatId = msg.chat.id;
+	var resp = '텔레그램 봇 시작합니다.';
+	bot.sendMessage(chatId, resp);
+});
+
 
 /*bot.onText(/.+/, (msg, match) => {
     
