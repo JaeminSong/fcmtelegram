@@ -28,7 +28,10 @@ const sessionPath = sessionClient.sessionPath(projectId, sessionId);
 var fcm = new FCM(serverKey);
 
 bot.onText(/\/start/, function(msg, match) {
-  var text = '원하는 기능을 선택해주세요.';
+	var chatId = msg.chat.id;
+	var resp = '텔레그램 봇 시작합니다.';
+	bot.sendMessage(chatId, resp);
+  /*var text = '원하는 기능을 선택해주세요.';
  
 const keyboard = Markup.inlineKeyboard([
 	  Markup.callbackButton('Bitshare ID', 'bts'),
@@ -39,7 +42,7 @@ const keyboard = Markup.inlineKeyboard([
 	], {column: 3})
 
 
-  bot.sendMessage(msg.chat.id, text, Extra.markup(keyboard));
+  bot.sendMessage(msg.chat.id, text, Extra.markup(keyboard));*/
 });
 
 /*bot.onText(/.+/, (msg, match) => {
