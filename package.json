@@ -1,0 +1,31 @@
+{
+  "name": "timetask-bot",
+  "version": "1.0.0",
+  "description": "timetask-telegram-bot",
+  "main": "index.js",
+  "dependencies": {
+    "fcm-node": "^1.2.0",
+    "express": "^4.16.3",
+    "get-json": "0.0.3",
+    "node-telegram-bot-api": "^0.30.0",
+    "npm": "^5.6.0",
+    "dialogflow" : "0.5.0",
+    "uuid" : "3.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev_start": "export $(cat .config) && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaeminSong/fcmtelegram.git"
+  },
+  "author": "solme.kim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JaeminSong/fcmtelegram/issues"
+  },
+  "homepage": "https://github.com/JaeminSong/fcmtelegram"
+}
